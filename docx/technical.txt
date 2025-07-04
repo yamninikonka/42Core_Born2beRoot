@@ -1,0 +1,31 @@
+19.06.25, 2.29PM
+----------------
+
+Installation:
+
+1. Which release is installed?
+@Task Docx: any Stable Version is allowed
+@Selection: Latest Stable Version, 12.11.0: https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/ & https://www.debian.org/CD/http-ftp/#mirrors
+
+
+2. Desktop or Baremetal(Minimalist)?
+Only Baremetal installation is allowed, which can be recognised with the iso file size, in this case ~700 MB(without Desktop GUI)
+Minimalist Installation Memory Requirements: 256 MB (RAM), 2 GB (Hard Drive)
+Desktop Installation Memory Requirements: 2 GB (RAM), 10 GB (Hard Drive)
+Source: https://www.debian.org/doc/manuals/debian-handbook/installation.en.html#:~:text=Installation%20requires%20256,office%20desktop%20workstation.
+
+
+3. Disk Partitioning?
+-> It is an Indispensable task during installation of an OS. It consists dividing physical drive into portions being named as "Partitions"
+-> File System enbles data storage organization on Physical space. Each Operating System has its own supported File Systems
+	Windows: NFS, FAT, exFAT
+	Linux Distros: Ext2, Ext3, Ext4, btrfs, XFS, ReiserFS, JFS, ZFS, Bcachefs
+-> From Understanding: Order Matters here
+	Physical Drive is Partitioned                - Disk Partition 
+	Then File Systems are Employed on top of     - File Systems (data processing operations are invovled and data storage management)
+
+-> Disk Partion Tools:
+	1. https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.en.html#:~:text=4.2.13.3.%C2%A0Configuring%20Multidisk%20Devices%20(Software%20RAID)
+	2. https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.en.html#:~:text=4.2.13.4.%C2%A0Configuring%20the%20Logical%20Volume%20Manager%20(LVM)
+	3. https://www.debian.org/doc/manuals/debian-handbook/sect.installation-steps.en.html#:~:text=4.2.13.5.%C2%A0Setting%20Up%20Encrypted%20Partitions
+	

@@ -1,0 +1,16 @@
+04.07.2025:
+-----------
+
+1. all the shell script files are well numbered.
+2. execute from 1 to 9 [mandatory], 10 to 12 [bonus] 
+
+
+To run bonus services on browser:
+---------------------------------
+Only works on HostSystem: Mac[42]
+.................................
+* Wordpress: 127.0.0.1:2100
+* FTP: 127.0.0.1:2112[does not work]
+  must use guest system: debian: user@hostname$ftp 127.0.0.1 21
+* Prometheus: 127.0.0.1:1212
+

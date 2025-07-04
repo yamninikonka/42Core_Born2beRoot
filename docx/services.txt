@@ -1,0 +1,67 @@
+============================================================
+Basic Concepts on Service Deployment and Hosting on Servers:
+============================================================
+1. install software
+2. install dependencies
+3. config communication
+4. set up database and webserver
+5. run the service | host the service
+
+Note:
+it is local hosting, means websites are accessible only in local server
+for publicaly making available, we must set our network on internet and publish it
+
+1. What is hosting an service?
+- All software components are sat on our local hardware[server]
+- Run this software with local computing devices
+- Whatever data is created, it is stored locally or on cloud depending upon 
+software configuration and functionality.
+
+2. How to offer service through internet?
+1. Need internet conenction or LAN conenction
+2. Need public Domain and Networking
+3. Configure these on your service and OS
+4. Run
+
+=========
+Services:
+=========
+
+||Wordpress:||
+A Content Management System
+1. Websites
+	blog, Professinal, merchandise
+2. Two flavours
+	a. Wordpress host your Websites
+	b. you can host your wordpress websites
+Dependencies
+1. Lighttpd: WebServer 
+2. PHP: Programming Language
+3. MariaDB: Database Management System, a fork of MySQL
+
+
+||FTP:||
+File Transfer Protocol
+No dependencies
+Server:
+	which is installed on debian Platform
+	configure configuration File
+	allow port communication with ufw
+	
+Client:
+	to tranfer files between two systems you need client program of FTP
+	install it[search on google]
+	the one i used is commandline-ftp client
+	there are two types from client
+		* with ssh
+		* without 
+		not have more details, research about it
+
+||Prometheus||
+Metrics Monitoring System
+No dependencies
+Steps:
+	install it
+	allow port
+	access it using localhost:2100[check in virtualbox]
+

@@ -1,0 +1,4 @@
+Site Title: Yamini WP
+Username: wp-ykonka
+Password: 12345
+Email: ykonka@student.42heilbronn.de

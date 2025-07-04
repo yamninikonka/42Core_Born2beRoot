@@ -1,0 +1,51 @@
+28.06.2025
+----------
+==============================================
+============== Tools & Packages ==============
+==============================================
+1. go to root->/
+2. explore all dirs inside
+3. you will see all installed tools & packages in corresponding group dirs
+----------------------------------------------
+# cd /
+# ls /sbin
+# ls /lib
+# ls /etc
+# ls /bin
+
+=======================================
+============== Commands ===============
+=======================================
+1. to check filesystems and physical valumes info
+	a. <lsblk>
+	b. <df -m /var/log> [specific folder memory info]
+2. to make alternations to the Logical Volume Manager
+	a. <lvm --help> [to see available functionalities and commands under this job]
+	mostly useful and I used to change the name and mounting point
+	b. lvrename <VolumeGroupName> <OldLogicalVolumeName> <NewLogicalVolumeName>
+		- lvrename LVMGroup var--log var-log
+	c. mount <LogicalVolumePath> <MountingPointName>
+		- mount /dev/mapper/LVMGroup-var--log /var/log
+		- for visual understanding see @ Pictures/AssigningMissingMountingPointName.png
+	d. after reboot, if there is an failure with new logical Volume
+	that means, the "/etc/fstab" is not updated properly and pointing to old logical volume name
+	so, please either manually update it or use "blkid" command
+
+
+===============================================================
+============ Transfer files between Server & Client ===========
+===============================================================
+using ssh server we can transfer files from guest to host and vice versa
+checking "scp" is installed: #<which scp>
+after that:
+::from host to guest::
+# <scp -P 2121 ykonka@localhost:/home/ykonka/monitoring.sh /Users/ykonka/Documents/monitoring.sh>
+::from guest to host::
+# <scp -P 4242 /Users/ykonka/Documents/monitoring.sh ykonka@localhost:/home/ykonka/monitoring.sh>
+actually, there is a problem with this direction of communication, however it is possible.
+
+****************************************************
+**--- There is a software for this kind of job ---**
+**      we can set up the service and run it      **
+**         - FTP: File Transfer Protocol          **
+****************************************************
