@@ -3,6 +3,7 @@
 
 1. all the shell script files are well numbered.
 2. execute from 1 to 9 [mandatory], 10 to 12 [bonus] 
+3. must take help from github repos mentioned in resources.txt
 
 
 To run bonus services on browser:
