@@ -2,7 +2,7 @@
 Basic System Administration Project
 
 Install Debian on VirtualBox and Setup basic system configuration tasks:
-* Creating User
+* Creating Users & Groups
 * Setting up SSH server
 * Securing system communication with UFW
 * System Access Controlling with SUDO
